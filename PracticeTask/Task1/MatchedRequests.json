@@ -216,7 +216,8 @@
     ],
     "tomcat": [
       "127.0.0.1 - - [05/Mar/2024:10:43:59 +0300] \"GET /ru/kaf-ikt HTTP/1.0\" 200 72119",
-      "[127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID\u003dresources\u0026itemID\u003d1_\u0026cm\u003d2 HTTP/1.0\" 200 12605, 127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /informatika/web-json HTTP/1.0\" 404 144615]"
+      "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID\u003dresources\u0026itemID\u003d1_\u0026cm\u003d2 HTTP/1.0\" 200 12605",
+      "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /informatika/web-json HTTP/1.0\" 404 144615"
     ]
   },
   "05.03.2024-17.17.42": {
@@ -235,7 +236,7 @@
     ],
     "tomcat": [
       "127.0.0.1 - - [05/Mar/2024:17:17:42 +0300] \"GET /ru/news/109290-abiturienty-zhdyom-vas-v-bguir-proydyot-den-otkrytykh-dverey HTTP/1.0\" 200 66191",
-      "[127.0.0.1 - - [05/Mar/2024:17:17:41 +0300] \"GET /ru/kaf-piks/stankevich-a-d HTTP/1.0\" 200 66644]"
+      "127.0.0.1 - - [05/Mar/2024:17:17:41 +0300] \"GET /ru/kaf-piks/stankevich-a-d HTTP/1.0\" 200 66644"
     ]
   },
   "05.03.2024-20.07.47": {
@@ -307,7 +308,7 @@
     ],
     "tomcat": [
       "127.0.0.1 - - [05/Mar/2024:14:38:16 +0300] \"GET /robots.txt HTTP/1.0\" 200 801",
-      "[127.0.0.1 - - [05/Mar/2024:14:38:15 +0300] \"GET /favicon.ico HTTP/1.0\" 200 1150]"
+      "127.0.0.1 - - [05/Mar/2024:14:38:15 +0300] \"GET /favicon.ico HTTP/1.0\" 200 1150"
     ]
   },
   "05.03.2024-12.57.42": {
@@ -614,7 +615,9 @@
     ],
     "tomcat": [
       "127.0.0.1 - - [05/Mar/2024:15:16:53 +0300] \"GET / HTTP/1.0\" 200 46058",
-      "[127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/prikazy HTTP/1.0\" 200 78601, 127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot HTTP/1.0\" 200 68676, 127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET / HTTP/1.0\" 200 46058]"
+      "127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/prikazy HTTP/1.0\" 200 78601",
+      "127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot HTTP/1.0\" 200 68676",
+      "127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET / HTTP/1.0\" 200 46058"
     ]
   },
   "05.03.2024-06.07.27": {

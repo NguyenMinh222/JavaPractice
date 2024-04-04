@@ -1,52 +1,76 @@
 {
-  "05.03.2024-12.07.32": {
-    "map": {
-      "nginx": {
-        "myArrayList": [
-          "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
-        ]
-      },
-      "mysql-low.log": {
-        "myArrayList": [
-          "# Time: 2024-03-05T12:07:32.101597Z",
-          "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
-          "# Query_time: 3.090476  Lock_time: 0.000091 Rows_sent: 0  Rows_examined: 14",
-          "SET timestamp\u003d1709640452;",
-          "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property\u003d21230 and (date_format(t414491.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
-        ]
-      },
-      "tomcat": {
-        "myArrayList": [
-          "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.0\" 200 75685"
-        ]
-      }
-    }
+  "05.03.2024-12.57.42": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:57:42.696540Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1966",
+      "# Query_time: 3.030466  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709643462;",
+      "commit;"
+    ],
+    "nginx": [
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/vf/komandovanie-batalona-kursantov HTTP/2.0\" 200 17157 \"https://www.bsuir.by/ru/vf/batalon-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\"",
+      "192.168.251.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/spetsialnosti-bguir HTTP/2.0\" 200 21980 \"https://www.bsuir.by/ru/fakultety\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "66.249.66.13 - - [05/Mar/2024:12:57:42 +0300] \"GET /en/academic-department-of-humanities/yury-yankouski HTTP/1.1\" 200 10341 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_148823.png HTTP/2.0\" 200 266226 \"https://www.bsuir.by/ru/vf/komandovanie-batalona-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\"",
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_172546.jpg HTTP/2.0\" 200 16460 \"https://www.bsuir.by/ru/vf/komandovanie-batalona-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\"",
+      "66.249.66.168 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_90870.doc HTTP/1.1\" 200 149504 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_168248.jpg HTTP/2.0\" 200 31115 \"https://www.bsuir.by/ru/vf/komandovanie-batalona-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/vf/komandovanie-batalona-kursantov HTTP/1.0\" 200 66992",
+      "127.0.0.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/spetsialnosti-bguir HTTP/1.0\" 200 116731",
+      "127.0.0.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /en/academic-department-of-humanities/yury-yankouski HTTP/1.0\" 200 35209"
+    ]
   },
   "05.03.2024-12.08.01": {
-    "map": {
-      "nginx": {
-        "myArrayList": [
-          "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 200 32478 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
-          "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 200 4066 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
-          "213.180.203.207 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.1\" 200 28177 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0\"",
-          "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 200 30087 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
-          "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 200 29882 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\""
-        ]
-      },
-      "mysql-low.log": {
-        "myArrayList": [
-          "# Time: 2024-03-05T12:08:01.976493Z",
-          "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1964",
-          "# Query_time: 3.025736  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-          "SET timestamp\u003d1709640481;",
-          "commit;"
-        ]
-      },
-      "tomcat": {
-        "myArrayList": [
-          "127.0.0.1 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.0\" 200 114334"
-        ]
-      }
-    }
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:08:01.976493Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1964",
+      "# Query_time: 3.025736  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709640481;",
+      "commit;"
+    ],
+    "nginx": [
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 200 32478 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 200 4066 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
+      "213.180.203.207 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.1\" 200 28177 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0\"",
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 200 30087 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 200 29882 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.0\" 200 114334"
+    ]
+  },
+  "05.03.2024-12.46.40": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:46:40.597514Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1965",
+      "# Query_time: 3.018581  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709642800;",
+      "commit;"
+    ],
+    "nginx": [
+      "37.110.210.202 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/2.0\" 200 28152 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/2.0\" 200 28096 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/1.0\" 200 114343",
+      "127.0.0.1 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/1.0\" 200 114270"
+    ]
+  },
+  "05.03.2024-12.07.32": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:07:32.101597Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.090476  Lock_time: 0.000091 Rows_sent: 0  Rows_examined: 14",
+      "SET timestamp\u003d1709640452;",
+      "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property\u003d21230 and (date_format(t414491.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
+    ],
+    "nginx": [
+      "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.0\" 200 75685"
+    ]
   }
 }

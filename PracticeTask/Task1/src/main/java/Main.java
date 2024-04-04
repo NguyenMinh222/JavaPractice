@@ -11,25 +11,15 @@ import java.util.logging.SimpleFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.google.gson.*;
-import org.checkerframework.checker.regex.qual.Regex;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class Main {
+public class Main{
     private static final Scanner scanner = new Scanner(System.in);
     private static final Logger logger = Logger.getLogger(Main.class.getName());
     private static SimpleFormatter formatter = new SimpleFormatter();
     private static FileHandler fileHandler;
 
     public static void main(String[] args) throws IOException, ParseException {
-//        if(args.length < 3){
-//            System.out.println("Необходимо указать пути к файлам: access.log, mysql-slow.log, localhost_access_log.2024-03-05.txt");
-//            return;
-//        }
-//
-//        String path_to_access = args[0];
-//        String path_to_mysql = args[1];
-//        String path_to_tomcat = args[2];
         fileHandler = new FileHandler("Main.log");
         fileHandler.setFormatter(formatter);
         logger.addHandler(fileHandler);
@@ -47,7 +37,7 @@ public class Main {
         Map<String, List<String>> tomcatLogRequests = getRequests(tomcatLogData);
         Map<String, List<String>> mysqlRequests = getMysqlRequests(mysqlLogData);
 
-        Map<String, JSONObject> getMatchedRequests = matchedRequests(nginxLogRequests, tomcatLogRequests, mysqlRequests);
+        Map<String, Object> getMatchedRequests = matchedRequests(nginxLogRequests, tomcatLogRequests, mysqlRequests);
         writeToJSON("MatchedRequests.json", getMatchedRequests);
 
         String startDateStr = checkTheRightDate("начальную");
@@ -63,11 +53,11 @@ public class Main {
         Date startDate = dateFormat.parse(startDateStr);
         Date endDate = dateFormat.parse(endDateStr);
 
-        Map<String, JSONObject> getRequestsByTime = FindOutOfPeriod(getMatchedRequests, startDate, endDate);
+        Map<String, Object> getRequestsByTime = FindOutOfPeriod(getMatchedRequests, startDate, endDate);
         writeToJSON("getRequestsByTime.json", getRequestsByTime);
     }
 
-    private static void writeToJSON(String nameOfFile, Map<String, JSONObject> Requests){
+    private static void writeToJSON(String nameOfFile, Map<String, Object> Requests){
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(Requests);
 
@@ -108,12 +98,12 @@ public class Main {
         }
     }
 
-    private static Map<String, JSONObject> FindOutOfPeriod(Map<String, JSONObject> getMatchedRequests,  Date startDate, Date endDate){
-        Map<String, JSONObject> requestsByTime = new TreeMap<>();
+    private static Map<String, Object> FindOutOfPeriod(Map<String, Object> getMatchedRequests,  Date startDate, Date endDate){
+        Map<String, Object> requestsByTime = new LinkedHashMap<>();
 
-        for(Map.Entry<String, JSONObject> matchedRequestsEntry : getMatchedRequests.entrySet()){
+        for(Map.Entry<String, Object> matchedRequestsEntry : getMatchedRequests.entrySet()){
             String get_key = matchedRequestsEntry.getKey();
-            JSONObject matchedRequest = matchedRequestsEntry.getValue();
+            Object matchedRequest = matchedRequestsEntry.getValue();
 
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy-HH.mm.ss");
             Date requestDate;
@@ -131,20 +121,18 @@ public class Main {
 
         return requestsByTime;
     }
-    private static Map<String, JSONObject> matchedRequests(Map<String, List<String>> nginxLogRequests,
-                                                           Map<String, List<String>> tomcatLogRequests,
-                                                           Map<String, List<String>> mysqlRequests){
+    private static Map<String, Object> matchedRequests(Map<String, List<String>> nginxLogRequests,
+                                                       Map<String, List<String>> tomcatLogRequests,
+                                                       Map<String, List<String>> mysqlRequests){
 
-        //Map<String, JSONObject> matched_Requests = new TreeMap<>();
-        Map<String, JSONObject> matched_Requests = new LinkedHashMap<>();
+        Map<String, Object> matched_Requests = new LinkedHashMap<>();
         SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         SimpleDateFormat outputFormat = new SimpleDateFormat("dd.MM.yyyy-HH.mm.ss");
 
         for (Map.Entry<String, List<String>> mysqlEntry: mysqlRequests.entrySet()){
-            //Основной ключ
+
             String time_key = mysqlEntry.getKey();
-            //Ключ с учетом того, что мы отнимаем 0.5 секунд (если останется то же время то ключ для поиска будет один,
-            // в ином случае - два)
+
             double milliseconds = Double.parseDouble(time_key.substring(17,26));
             StringBuilder anotherKey = new StringBuilder(time_key);
             anotherKey.replace(17,26, String.valueOf(milliseconds - 0.5));
@@ -166,32 +154,34 @@ public class Main {
                 }
 
                 List<String> value_of_mysqlReq = mysqlEntry.getValue();
-                JSONObject matchedRequest = new JSONObject();
+                Map<String, Object> matchedRequest = new LinkedHashMap<>();
 
                 for (String key : keys){
                     if(nginxLogRequests.containsKey(key) && tomcatLogRequests.containsKey(key)){
-                        if (!matchedRequest.has("mysql-low.log")){
+                        if (!matchedRequest.containsKey("mysql-low.log")){
                             matchedRequest.put("mysql-low.log", value_of_mysqlReq);
                             time_key = key;
                         }
-                        if (!matchedRequest.has("nginx")) {
-                            matchedRequest.put("nginx", nginxLogRequests.get(key));
+                        if (!matchedRequest.containsKey("nginx")) {
+                            List<String> listOfRequests = new ArrayList<>(nginxLogRequests.get(key));
+                            matchedRequest.put("nginx", listOfRequests);
                         }
                         else {
-                            JSONArray existingNginxListOfRequest = matchedRequest.getJSONArray("nginx");
-                            existingNginxListOfRequest.put(nginxLogRequests.get(key));
+                            List<String> existingNginxListOfRequest = (List<String>) matchedRequest.get("nginx");
+                            existingNginxListOfRequest.addAll(nginxLogRequests.get(key));
                         }
-                        if (!matchedRequest.has("tomcat")) {
-                            matchedRequest.put("tomcat", tomcatLogRequests.get(key));
+                        if (!matchedRequest.containsKey("tomcat")) {
+                            List<String> listOfRequests = new ArrayList<>(tomcatLogRequests.get(key));
+                            matchedRequest.put("tomcat", listOfRequests);
                         }
                         else {
-                            JSONArray existingTomcatListOfRequest = matchedRequest.getJSONArray("tomcat");
-                            existingTomcatListOfRequest.put(tomcatLogRequests.get(key));
+                            List<String> existingTomcatListOfRequest = (List<String>) matchedRequest.get("tomcat");
+                            existingTomcatListOfRequest.addAll((tomcatLogRequests.get(key)));
                         }
                     }
                 }
 
-                if(matchedRequest.length() > 0){
+                if(matchedRequest.size() > 0){
                     matched_Requests.put(time_key, matchedRequest);
                     logger.info("Соответствующие данные успешно добавлены в файл!");
                 }
@@ -278,7 +268,7 @@ public class Main {
                         requests.put(formattedDate, values);
                     }
                     //requests.put(formattedDate, logLine.replaceAll(regexTarget, ""));
-                   // writer.write(formattedDate + " " + logLine.replaceAll(regexTarget, "") +"\n");
+                    // writer.write(formattedDate + " " + logLine.replaceAll(regexTarget, "") +"\n");
                     i++;
                 }catch (ParseException e){
                     logger.log(Level.SEVERE, "Ошибка при конвертации даты и времени: " + Date_From_Log, e);
