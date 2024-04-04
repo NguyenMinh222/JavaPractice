@@ -1,0 +1,62 @@
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2023-10-16T08:02:53.948425Z
+# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     2
+# Query_time: 4.317507  Lock_time: 0.000115 Rows_sent: 0  Rows_examined: 22
+use bsuir_webman2;
+SET timestamp=1697443373;
+insert into s_subquery_tmp3 select 571518, t779475.id_obj from s_num_val t779475 where (t779475.id_property=22008 and (t779475.val > 0.0));
+# Time: 2023-10-16T08:08:14.461149Z
+# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     2
+# Query_time: 3.122284  Lock_time: 0.000067 Rows_sent: 0  Rows_examined: 44
+SET timestamp=1697443694;
+insert into s_subquery_tmp3 select 572195, t780378.id_obj from s_str_val t780378 where (t780378.id_property=22009 and (t780378.val like '%'));
+# Time: 2023-10-16T08:22:55.451553Z
+# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4
+# Query_time: 3.483506  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1697444575;
+commit;
+# Time: 2023-10-16T08:23:07.250176Z
+# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     2
+# Query_time: 3.221831  Lock_time: 0.000048 Rows_sent: 1  Rows_examined: 61
+SET timestamp=1697444587;
+select t.childid from security_resties t, security_resources r where t.childid =r.id and t.parentid=100229 and t.pass=0 and r.typeid=-40;
+# Time: 2023-10-16T08:35:25.990155Z
+# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     2
+# Query_time: 3.137513  Lock_time: 0.000129 Rows_sent: 0  Rows_examined: 865
+SET timestamp=1697445325;
+replace into tmp_number (seq, id, id2) select 1158751,r.id,1 from security_resties rt, security_resources r where rt.childid=131967 and r.typeid=-41 and r.id=rt.parentid;
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 5.7.42-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2023-10-16T08:46:24.646771Z
+# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     3
+# Query_time: 3.160878  Lock_time: 0.000049 Rows_sent: 0  Rows_examined: 44
+use bsuir_webman2;
+SET timestamp=1697445984;
+insert into s_subquery_tmp3 select 576583, t786385.id_obj from s_str_val t786385 where (t786385.id_property=22009 and (t786385.val like '%'));
