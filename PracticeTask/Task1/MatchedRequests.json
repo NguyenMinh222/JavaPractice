@@ -4,7 +4,7 @@
       "# Time: 2024-03-05T03:39:26.711782Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1927",
       "# Query_time: 3.494545  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709609966;",
+      "SET timestamp=1709609966;",
       "commit;"
     ],
     "nginx": [
@@ -21,8 +21,8 @@
       "# Time: 2024-03-05T17:06:34.947705Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.211226  Lock_time: 0.000068 Rows_sent: 0  Rows_examined: 20",
-      "SET timestamp\u003d1709658394;",
-      "insert into s_subquery_tmp3 select 1810070, t452186.id_obj from s_str_val t452186 where (t452186.id_property\u003d22009 and (t452186.val like \u0027%\u0027));"
+      "SET timestamp=1709658394;",
+      "insert into s_subquery_tmp3 select 1810070, t452186.id_obj from s_str_val t452186 where (t452186.id_property=22009 and (t452186.val like '%'));"
     ],
     "nginx": [
       "51.38.148.50 - - [05/Mar/2024:17:06:34 +0300] \"GET /m/12_100229_1_82012.pdf HTTP/2.0\" 200 379448 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""
@@ -32,13 +32,13 @@
       "127.0.0.1 - - [05/Mar/2024:17:06:34 +0300] \"GET / HTTP/1.0\" 200 91294"
     ]
   },
-  "05.03.2024-17.55.53": {
+  "05.03.2024-17.55.54": {
     "mysql-low.log": [
       "# Time: 2024-03-05T17:55:54.195682Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.822412  Lock_time: 0.000092 Rows_sent: 0  Rows_examined: 14",
-      "SET timestamp\u003d1709661354;",
-      "insert into s_subquery_tmp select 1812788, t455849.id_obj from s_date_val t455849 where (t455849.id_property\u003d21230 and (date_format(t455849.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
+      "SET timestamp=1709661354;",
+      "insert into s_subquery_tmp select 1812788, t455849.id_obj from s_date_val t455849 where (t455849.id_property=21230 and (date_format(t455849.val,'-%y%m%d')=date_format('2020.08.17 03:00','-%y%m%d') ));"
     ],
     "nginx": [
       "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/css/default.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
@@ -85,8 +85,8 @@
       "# Time: 2024-03-05T15:16:43.210778Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 8.576540  Lock_time: 0.000071 Rows_sent: 0  Rows_examined: 424",
-      "SET timestamp\u003d1709651803;",
-      "insert into s_subquery_tmp select 1802969, t442588.id_obj from s_str_val t442588 where (t442588.id_property\u003d14352 and (t442588.val like \u0027%\u0027));"
+      "SET timestamp=1709651803;",
+      "insert into s_subquery_tmp select 1802969, t442588.id_obj from s_str_val t442588 where (t442588.id_property=14352 and (t442588.val like '%'));"
     ],
     "nginx": [
       "66.249.64.5 - - [05/Mar/2024:15:16:43 +0300] \"GET /m/12_100229_1_168181.pdf HTTP/1.1\" 403 180 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
@@ -122,8 +122,8 @@
       "# Time: 2024-03-05T10:27:16.520200Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.054418  Lock_time: 0.000075 Rows_sent: 0  Rows_examined: 20",
-      "SET timestamp\u003d1709634436;",
-      "insert into s_subquery_tmp3 select 1770426, t398449.id_obj from s_str_val t398449 where (t398449.id_property\u003d22009 and (t398449.val like \u0027%\u0027));"
+      "SET timestamp=1709634436;",
+      "insert into s_subquery_tmp3 select 1770426, t398449.id_obj from s_str_val t398449 where (t398449.id_property=22009 and (t398449.val like '%'));"
     ],
     "nginx": [
       "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/amazingcarousel-min.js HTTP/2.0\" 200 218450 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
@@ -149,7 +149,7 @@
       "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148689.jpg HTTP/2.0\" 200 59081 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/style/fonts/PTS55F_W.woff HTTP/2.0\" 200 154040 \"https://science.bsuir.by/online/layouts/77/style/fonts/stylesheet.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/style/fonts/PTS75F_W.woff HTTP/2.0\" 200 160436 \"https://science.bsuir.by/online/layouts/77/style/fonts/stylesheet.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
-      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/bootstrap/fonts/fontawesome-webfont.woff2?v\u003d4.7.0 HTTP/2.0\" 200 77160 \"https://science.bsuir.by/online/bootstrap/css/font-awesome.min.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/bootstrap/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/2.0\" 200 77160 \"https://science.bsuir.by/online/bootstrap/css/font-awesome.min.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_136582.jpg HTTP/2.0\" 200 174112 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148692.jpg HTTP/2.0\" 200 110176 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133170.jpg HTTP/2.0\" 200 101740 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
@@ -170,7 +170,7 @@
       "# Time: 2024-03-05T10:43:59.278013Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1956",
       "# Query_time: 3.264475  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709635439;",
+      "SET timestamp=1709635439;",
       "commit;"
     ],
     "nginx": [
@@ -211,12 +211,12 @@
       "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159856.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159842.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159851.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
-      "37.214.27.10 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID\u003dresources\u0026itemID\u003d1_\u0026cm\u003d2 HTTP/2.0\" 200 2169 \"https://www.bsuir.by/cms/index.jsp\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "37.214.27.10 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID=resources&itemID=1_&cm=2 HTTP/2.0\" 200 2169 \"https://www.bsuir.by/cms/index.jsp\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
       "20.26.44.162 - - [05/Mar/2024:10:43:58 +0300] \"GET /informatika/web-json HTTP/1.1\" 404 144771 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36\""
     ],
     "tomcat": [
       "127.0.0.1 - - [05/Mar/2024:10:43:59 +0300] \"GET /ru/kaf-ikt HTTP/1.0\" 200 72119",
-      "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID\u003dresources\u0026itemID\u003d1_\u0026cm\u003d2 HTTP/1.0\" 200 12605",
+      "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID=resources&itemID=1_&cm=2 HTTP/1.0\" 200 12605",
       "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /informatika/web-json HTTP/1.0\" 404 144615"
     ]
   },
@@ -225,7 +225,7 @@
       "# Time: 2024-03-05T17:17:42.032859Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1983",
       "# Query_time: 3.094125  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709659062;",
+      "SET timestamp=1709659062;",
       "commit;"
     ],
     "nginx": [
@@ -244,8 +244,8 @@
       "# Time: 2024-03-05T20:07:47.661946Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.701691  Lock_time: 0.000106 Rows_sent: 0  Rows_examined: 20",
-      "SET timestamp\u003d1709669267;",
-      "insert into s_subquery_tmp3 select 1820003, t465566.id_obj from s_str_val t465566 where (t465566.id_property\u003d22009 and (t465566.val like \u0027%\u0027));"
+      "SET timestamp=1709669267;",
+      "insert into s_subquery_tmp3 select 1820003, t465566.id_obj from s_str_val t465566 where (t465566.id_property=22009 and (t465566.val like '%'));"
     ],
     "nginx": [
       "37.214.45.177 - - [05/Mar/2024:20:07:47 +0300] \"GET /ru/kaf-piks/state-exam HTTP/2.0\" 200 16921 \"https://www.bsuir.by/ru/kaf-piks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
@@ -256,13 +256,13 @@
       "127.0.0.1 - - [05/Mar/2024:20:07:47 +0300] \"GET /ru/kaf-piks/state-exam HTTP/1.0\" 200 65265"
     ]
   },
-  "05.03.2024-07.39.48": {
+  "05.03.2024-07.39.49": {
     "mysql-low.log": [
       "# Time: 2024-03-05T07:39:49.361089Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.111475  Lock_time: 0.000025 Rows_sent: 0  Rows_examined: 30",
-      "SET timestamp\u003d1709624389;",
-      "delete from s_subquery_tmp3 where tmp3__n__\u003d1753066;"
+      "SET timestamp=1709624389;",
+      "delete from s_subquery_tmp3 where tmp3__n__=1753066;"
     ],
     "nginx": [
       "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET / HTTP/2.0\" 200 28144 \"https://yandex.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
@@ -294,8 +294,8 @@
       "# Time: 2024-03-05T14:38:16.371327Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.050025  Lock_time: 0.000103 Rows_sent: 0  Rows_examined: 40",
-      "SET timestamp\u003d1709649496;",
-      "insert into s_subquery_tmp select 1799466, t437893.id_obj from s_subquery_tmp3 s_subquery_tmp3___1799465, s_num_val t437893 where s_subquery_tmp3___1799465.tmp3__n__\u003d1799465 and s_subquery_tmp3___1799465.tmp3__id__\u003dt437893.id_obj and (t437893.id_property\u003d22007 and (t437893.val\u003d0));"
+      "SET timestamp=1709649496;",
+      "insert into s_subquery_tmp select 1799466, t437893.id_obj from s_subquery_tmp3 s_subquery_tmp3___1799465, s_num_val t437893 where s_subquery_tmp3___1799465.tmp3__n__=1799465 and s_subquery_tmp3___1799465.tmp3__id__=t437893.id_obj and (t437893.id_property=22007 and (t437893.val=0));"
     ],
     "nginx": [
       "87.250.224.82 - - [05/Mar/2024:14:38:16 +0300] \"GET /robots.txt HTTP/1.1\" 200 801 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\"",
@@ -316,7 +316,7 @@
       "# Time: 2024-03-05T12:57:42.696540Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1966",
       "# Query_time: 3.030466  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709643462;",
+      "SET timestamp=1709643462;",
       "commit;"
     ],
     "nginx": [
@@ -339,7 +339,7 @@
       "# Time: 2024-03-05T12:08:01.976493Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1964",
       "# Query_time: 3.025736  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709640481;",
+      "SET timestamp=1709640481;",
       "commit;"
     ],
     "nginx": [
@@ -353,12 +353,12 @@
       "127.0.0.1 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.0\" 200 114334"
     ]
   },
-  "05.03.2024-11.45.49": {
+  "05.03.2024-11.45.50": {
     "mysql-low.log": [
       "# Time: 2024-03-05T11:45:50.219104Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1961",
       "# Query_time: 3.659121  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709639150;",
+      "SET timestamp=1709639150;",
       "commit;"
     ],
     "nginx": [
@@ -375,7 +375,7 @@
       "# Time: 2024-03-05T11:56:50.837839Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1963",
       "# Query_time: 3.036949  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709639810;",
+      "SET timestamp=1709639810;",
       "commit;"
     ],
     "nginx": [
@@ -393,7 +393,7 @@
       "# Time: 2024-03-05T19:42:48.683237Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1993",
       "# Query_time: 3.152747  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709667768;",
+      "SET timestamp=1709667768;",
       "commit;"
     ],
     "nginx": [
@@ -417,8 +417,8 @@
       "# Time: 2024-03-05T15:49:37.105492Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.067569  Lock_time: 0.000077 Rows_sent: 0  Rows_examined: 836",
-      "SET timestamp\u003d1709653777;",
-      "insert into s_subquery_tmp3 select 1805499, t446004.id_obj from s_date_val t446004 where (t446004.id_property\u003d21033 and (date_format(t446004.val,\u0027-%y%m\u0027)\u003ddate_format(\u00272024.03.01 03:00\u0027,\u0027-%y%m\u0027) ));"
+      "SET timestamp=1709653777;",
+      "insert into s_subquery_tmp3 select 1805499, t446004.id_obj from s_date_val t446004 where (t446004.id_property=21033 and (date_format(t446004.val,'-%y%m')=date_format('2024.03.01 03:00','-%y%m') ));"
     ],
     "nginx": [
       "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET / HTTP/2.0\" 200 29321 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
@@ -439,7 +439,7 @@
       "# Time: 2024-03-05T12:46:40.597514Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1965",
       "# Query_time: 3.018581  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709642800;",
+      "SET timestamp=1709642800;",
       "commit;"
     ],
     "nginx": [
@@ -456,8 +456,8 @@
       "# Time: 2024-03-05T07:07:41.448156Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.408095  Lock_time: 0.000063 Rows_sent: 0  Rows_examined: 867",
-      "SET timestamp\u003d1709622461;",
-      "replace into tmp_number (seq, id, id2) select 6969292,r.id,1 from security_resties rt, security_resources r where rt.childid\u003d121327 and r.typeid\u003d-41 and r.id\u003drt.parentid;"
+      "SET timestamp=1709622461;",
+      "replace into tmp_number (seq, id, id2) select 6969292,r.id,1 from security_resties rt, security_resources r where rt.childid=121327 and r.typeid=-41 and r.id=rt.parentid;"
     ],
     "nginx": [
       "216.144.248.27 - - [05/Mar/2024:07:07:41 +0300] \"GET / HTTP/1.1\" 200 28145 \"https://bsuir.by\" \"Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)\"",
@@ -479,7 +479,7 @@
       "# Time: 2024-03-05T06:27:36.728663Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.775335  Lock_time: 0.000000 Rows_sent: 161  Rows_examined: 2276",
-      "SET timestamp\u003d1709620056;",
+      "SET timestamp=1709620056;",
       "CALL getPages2MenuItemsTies(1,100230);"
     ],
     "nginx": [
@@ -494,14 +494,14 @@
       "# Time: 2024-03-05T12:07:32.101597Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.090476  Lock_time: 0.000091 Rows_sent: 0  Rows_examined: 14",
-      "SET timestamp\u003d1709640452;",
-      "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property\u003d21230 and (date_format(t414491.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
+      "SET timestamp=1709640452;",
+      "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property=21230 and (date_format(t414491.val,'-%y%m%d')=date_format('2020.08.17 03:00','-%y%m%d') ));"
     ],
     "nginx": [
-      "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
+      "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID=94597&resID=100229&lang=ru&tnj_type=2&start_from=0&ord_type=-1&what_find=%25&pid=100229&rid=102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
     ],
     "tomcat": [
-      "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.0\" 200 75685"
+      "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID=94597&resID=100229&lang=ru&tnj_type=2&start_from=0&ord_type=-1&what_find=%25&pid=100229&rid=102243 HTTP/1.0\" 200 75685"
     ]
   },
   "05.03.2024-16.38.58": {
@@ -509,8 +509,8 @@
       "# Time: 2024-03-05T16:38:58.050895Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.102607  Lock_time: 0.000072 Rows_sent: 0  Rows_examined: 20",
-      "SET timestamp\u003d1709656738;",
-      "insert into s_subquery_tmp3 select 1808464, t450017.id_obj from s_str_val t450017 where (t450017.id_property\u003d22009 and (t450017.val like \u0027%\u0027));"
+      "SET timestamp=1709656738;",
+      "insert into s_subquery_tmp3 select 1808464, t450017.id_obj from s_str_val t450017 where (t450017.id_property=22009 and (t450017.val like '%'));"
     ],
     "nginx": [
       "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /ru/kaf-poit/sostav-kafedry HTTP/2.0\" 200 24695 \"https://www.bsuir.by/ru/kaf-poit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
@@ -560,7 +560,7 @@
       "# Time: 2024-03-05T15:16:53.354271Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1977",
       "# Query_time: 4.847039  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709651813;",
+      "SET timestamp=1709651813;",
       "commit;"
     ],
     "nginx": [
@@ -625,8 +625,8 @@
       "# Time: 2024-03-05T06:07:27.313368Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 4.963989  Lock_time: 0.000070 Rows_sent: 0  Rows_examined: 20",
-      "SET timestamp\u003d1709618847;",
-      "insert into s_subquery_tmp3 select 1743571, t362421.id_obj from s_str_val t362421 where (t362421.id_property\u003d22009 and (t362421.val like \u0027%\u0027));"
+      "SET timestamp=1709618847;",
+      "insert into s_subquery_tmp3 select 1743571, t362421.id_obj from s_str_val t362421 where (t362421.id_property=22009 and (t362421.val like '%'));"
     ],
     "nginx": [
       "213.180.203.222 - - [05/Mar/2024:06:07:27 +0300] \"GET /ru/kaf-poit/brantsevich-p-yu HTTP/1.1\" 200 21645 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\""
@@ -635,17 +635,17 @@
       "127.0.0.1 - - [05/Mar/2024:06:07:27 +0300] \"GET /ru/kaf-poit/brantsevich-p-yu HTTP/1.0\" 200 77423"
     ]
   },
-  "05.03.2024-15.07.28": {
+  "05.03.2024-15.07.29": {
     "mysql-low.log": [
       "# Time: 2024-03-05T15:07:29.091528Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.371278  Lock_time: 0.000074 Rows_sent: 0  Rows_examined: 20",
-      "SET timestamp\u003d1709651249;",
-      "insert into s_subquery_tmp3 select 1802322, t441727.id_obj from s_str_val t441727 where (t441727.id_property\u003d22009 and (t441727.val like \u0027%\u0027));"
+      "SET timestamp=1709651249;",
+      "insert into s_subquery_tmp3 select 1802322, t441727.id_obj from s_str_val t441727 where (t441727.id_property=22009 and (t441727.val like '%'));"
     ],
     "nginx": [
       "46.216.112.209 - - [05/Mar/2024:15:07:28 +0300] \"GET /m/12_100229_1_182300.webp HTTP/2.0\" 200 218412 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36\"",
-      "192.168.251.1 - - [05/Mar/2024:15:07:28 +0300] \"POST /cms/service/editor/wysiwyg.jsp HTTP/2.0\" 200 19574 \"https://www.bsuir.by/cms/service/editor/wysiwyg.jsp?PageID\u003d104169\u0026LangID\u003d1\" \"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""
+      "192.168.251.1 - - [05/Mar/2024:15:07:28 +0300] \"POST /cms/service/editor/wysiwyg.jsp HTTP/2.0\" 200 19574 \"https://www.bsuir.by/cms/service/editor/wysiwyg.jsp?PageID=104169&LangID=1\" \"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""
     ],
     "tomcat": [
       "127.0.0.1 - - [05/Mar/2024:15:07:28 +0300] \"POST /cms/service/editor/wysiwyg.jsp HTTP/1.0\" 200 277913"

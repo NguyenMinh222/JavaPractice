@@ -1,74 +1,22 @@
-апр. 04, 2024 10:48:17 AM Main getData
-INFO: Чтение из файла: D:\PracticeTask\nginx\access.log
-апр. 04, 2024 10:48:18 AM Main getData
-INFO: Данные успешно прочитаны из файла D:\PracticeTask\nginx\access.log
-апр. 04, 2024 10:48:18 AM Main getData
-INFO: Чтение из файла: D:\PracticeTask\tomсat\localhost_access_log.2024-03-05.txt
-апр. 04, 2024 10:48:18 AM Main getData
-INFO: Данные успешно прочитаны из файла D:\PracticeTask\tomсat\localhost_access_log.2024-03-05.txt
-апр. 04, 2024 10:48:18 AM Main getData
-INFO: Чтение из файла: D:\PracticeTask\mysql\mysql-slow.log
-апр. 04, 2024 10:48:18 AM Main getData
-INFO: Данные успешно прочитаны из файла D:\PracticeTask\mysql\mysql-slow.log
-апр. 04, 2024 10:48:22 AM Main matchedRequests
+апр. 16, 2024 1:26:44 PM Main getData
+INFO: Чтение из файла: D:\PracticeTask\Task1\Nginx_Requests\access.log
+апр. 16, 2024 1:26:44 PM Main getData
+INFO: Данные успешно прочитаны из файла D:\PracticeTask\Task1\Nginx_Requests\access.log
+апр. 16, 2024 1:26:44 PM Main check_Process
+INFO: Введенный файл является верным файлом Nginx.
+апр. 16, 2024 1:26:46 PM Main getData
+INFO: Чтение из файла: D:\PracticeTask\Task1\Tomcat_Requests\localhost_access_log.2024-03-05.txt
+апр. 16, 2024 1:26:46 PM Main getData
+INFO: Данные успешно прочитаны из файла D:\PracticeTask\Task1\Tomcat_Requests\localhost_access_log.2024-03-05.txt
+апр. 16, 2024 1:26:46 PM Main check_Process
+INFO: Введенный файл является верным файлом Tomcat.
+апр. 16, 2024 1:26:50 PM Main getData
+INFO: Чтение из файла: D:\PracticeTask\Task1\MySQL_Requests\mysql-slow.log
+апр. 16, 2024 1:26:51 PM Main getData
+INFO: Данные успешно прочитаны из файла D:\PracticeTask\Task1\MySQL_Requests\mysql-slow.log
+апр. 16, 2024 1:26:51 PM Main checkTheRightFile
+INFO: Введенный файл является верным файлом  MySQL.
+апр. 16, 2024 1:26:58 PM Main matchedRequests
 INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:22 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main matchedRequests
-INFO: Соответствующие данные успешно добавлены в файл!
-апр. 04, 2024 10:48:23 AM Main writeToJSON
-INFO: Объекты были добавлены в JSON file.
-апр. 04, 2024 10:48:38 AM Main FindOutOfPeriod
-INFO: Данные по соответствующему периоданы найдены и добавлены в JSON.
-апр. 04, 2024 10:48:38 AM Main FindOutOfPeriod
-INFO: Данные по соответствующему периоданы найдены и добавлены в JSON.
-апр. 04, 2024 10:48:38 AM Main FindOutOfPeriod
-INFO: Данные по соответствующему периоданы найдены и добавлены в JSON.
-апр. 04, 2024 10:48:38 AM Main FindOutOfPeriod
-INFO: Данные по соответствующему периоданы найдены и добавлены в JSON.
-апр. 04, 2024 10:48:38 AM Main writeToJSON
+апр. 16, 2024 1:26:58 PM Main writeToJSON
 INFO: Объекты были добавлены в JSON file.

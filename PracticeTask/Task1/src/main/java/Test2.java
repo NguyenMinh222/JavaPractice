@@ -4,44 +4,38 @@ import org.json.CDL;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Test2 {
+    static Scanner input = new Scanner(System.in);
+    static DecimalFormat formatter = new DecimalFormat("0.00");
+
     public static void main(String[] args) {
-//        JSONObject json = new JSONObject();
-//        List<String> listOfName = new ArrayList<>();
-//        listOfName.add("Mahesh");
-//        listOfName.add("Nilesh");
-//        json.put("101", listOfName);
-//        json.put("103", "Jugesh");
-//        json.put("102", "Yulia");
-//        System.out.println(json);
-        Map<String, Object> jsonMap = new LinkedHashMap<>();
+        double a = Double.parseDouble("53.5555");
+        double b = ChooseSeconds();
+        System.out.println(a-b);
+    }
 
-        List<String> listOfName = new ArrayList<>();
-        listOfName.add("Mahesh");
-        listOfName.add("Nilesh");
-        jsonMap.put("101", listOfName);
-        jsonMap.put("103", "Jugesh");
-        jsonMap.put("102", "Yulia");
-
-//        JSONObject json = new JSONObject();
-//        json.put("101", listOfName);
-//        json.put("103", "fff");
-//        json.put("102", "fff");
-
-        // Создаем JSONObject из LinkedHashMap
-//        JSONObject json = new JSONObject(jsonMap);
-//        System.out.println(json);
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-        // Преобразуем Map в JSON строку
-        String jsonString = gson.toJson(jsonMap);
-
-        // Выводим JSON строку
-        System.out.println(jsonString);
-
+    private static double ChooseSeconds() {
+        double seconds = 0;
+        while (true) {
+            System.out.println("Введите кол-во секунд (не более 10 секунд): ");
+            if (input.hasNextDouble()) {
+                seconds = input.nextDouble();
+                if (seconds <= 10 && seconds >= 0) {
+                    return Double.parseDouble(formatter.format(seconds).replace(',','.'));
+                } else {
+                    System.out.println("Ошибка: количество секунд должно быть от 0 до 10.");
+                }
+            } else {
+                System.out.println("Ошибка: введите время (секунды) в формате ss.SS.");
+                input.next();
+            }
+        }
     }
 }

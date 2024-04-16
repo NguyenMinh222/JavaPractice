@@ -1,0 +1,12 @@
+﻿"D:\\PracticeTask\\nginx\\access.log" "D:\\PracticeTask\\tomсat\\localhost_access_log.2024-03-05.txt" "D:\\PracticeTask\\mysql\\mysql-slow.log" 
+
+05.03.2024-12.00.00
+javac -cp "C:\Users\vscode\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\vscode\.m2\repository\org\json\json\20160810\json-20160810.jar" Main.java
+
+Входные параметры проекта ()
+java -cp Task1.jar Main "access.log" "localhost_access_log.2024-03-05.txt" "mysql-slow.log"
+
+D:\PracticeTask\Task1\src\main\java\META-INF\MANIFEST.MF
+
+Jar.file находится по пути : 
+D:\PracticeTask\Task1\out\artifacts\Task1_jar

@@ -4,7 +4,7 @@
       "# Time: 2024-03-05T12:57:42.696540Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1966",
       "# Query_time: 3.030466  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709643462;",
+      "SET timestamp=1709643462;",
       "commit;"
     ],
     "nginx": [
@@ -27,7 +27,7 @@
       "# Time: 2024-03-05T12:08:01.976493Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1964",
       "# Query_time: 3.025736  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709640481;",
+      "SET timestamp=1709640481;",
       "commit;"
     ],
     "nginx": [
@@ -46,7 +46,7 @@
       "# Time: 2024-03-05T12:46:40.597514Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1965",
       "# Query_time: 3.018581  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
-      "SET timestamp\u003d1709642800;",
+      "SET timestamp=1709642800;",
       "commit;"
     ],
     "nginx": [
@@ -63,14 +63,14 @@
       "# Time: 2024-03-05T12:07:32.101597Z",
       "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
       "# Query_time: 3.090476  Lock_time: 0.000091 Rows_sent: 0  Rows_examined: 14",
-      "SET timestamp\u003d1709640452;",
-      "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property\u003d21230 and (date_format(t414491.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
+      "SET timestamp=1709640452;",
+      "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property=21230 and (date_format(t414491.val,'-%y%m%d')=date_format('2020.08.17 03:00','-%y%m%d') ));"
     ],
     "nginx": [
-      "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
+      "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID=94597&resID=100229&lang=ru&tnj_type=2&start_from=0&ord_type=-1&what_find=%25&pid=100229&rid=102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
     ],
     "tomcat": [
-      "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.0\" 200 75685"
+      "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID=94597&resID=100229&lang=ru&tnj_type=2&start_from=0&ord_type=-1&what_find=%25&pid=100229&rid=102243 HTTP/1.0\" 200 75685"
     ]
   }
 }

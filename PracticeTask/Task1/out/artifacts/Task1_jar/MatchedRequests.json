@@ -1,0 +1,654 @@
+{
+  "05.03.2024-03.39.26": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T03:39:26.711782Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1927",
+      "# Query_time: 3.494545  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709609966;",
+      "commit;"
+    ],
+    "nginx": [
+      "78.47.240.130 - - [05/Mar/2024:03:39:26 +0300] \"GET /ru/kaf-ekonom-informat/magistratura HTTP/1.1\" 200 17943 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\"",
+      "213.180.203.115 - - [05/Mar/2024:03:39:26 +0300] \"GET /ru/kaf-elektroniki/rusakovich-v-n HTTP/1.1\" 200 17458 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:03:39:26 +0300] \"GET /ru/kaf-ekonom-informat/magistratura HTTP/1.0\" 200 66741",
+      "127.0.0.1 - - [05/Mar/2024:03:39:26 +0300] \"GET /ru/kaf-elektroniki/rusakovich-v-n HTTP/1.0\" 200 66648"
+    ]
+  },
+  "05.03.2024-17.06.34": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T17:06:34.947705Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.211226  Lock_time: 0.000068 Rows_sent: 0  Rows_examined: 20",
+      "SET timestamp\u003d1709658394;",
+      "insert into s_subquery_tmp3 select 1810070, t452186.id_obj from s_str_val t452186 where (t452186.id_property\u003d22009 and (t452186.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "51.38.148.50 - - [05/Mar/2024:17:06:34 +0300] \"GET /m/12_100229_1_82012.pdf HTTP/2.0\" 200 379448 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:17:06:34 +0300] \"GET / HTTP/1.0\" 200 106705",
+      "127.0.0.1 - - [05/Mar/2024:17:06:34 +0300] \"GET / HTTP/1.0\" 200 91294"
+    ]
+  },
+  "05.03.2024-17.55.53": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T17:55:54.195682Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.822412  Lock_time: 0.000092 Rows_sent: 0  Rows_examined: 14",
+      "SET timestamp\u003d1709661354;",
+      "insert into s_subquery_tmp select 1812788, t455849.id_obj from s_date_val t455849 where (t455849.id_property\u003d21230 and (date_format(t455849.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
+    ],
+    "nginx": [
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/css/default.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/fonts/romul.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/fonts/HelveticaItalic.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /cms/js/jquery-1.9.1.min.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_148664.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/css/jssos-slider.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_182922.jpeg HTTP/2.0\" 200 71661 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_182921.jpeg HTTP/2.0\" 200 101843 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "109.238.247.83 - - [05/Mar/2024:17:55:53 +0300] \"GET /impuls/ HTTP/1.0\" 200 54038 \"-\" \"Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_182920.jpeg HTTP/2.0\" 200 127384 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/js/jssor.slider.mini.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/css/styles-for-info-pages.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_182924.jpg HTTP/2.0\" 200 363514 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/img/icons.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499//img/icons.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff HTTP/2.0\" 304 0 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff HTTP/2.0\" 304 0 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_84949.png HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_161572.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_159842.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_181191.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_159852.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_159812.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_164529.jpg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_159855.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_159856.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "172.16.236.210 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_159851.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/news/111396-na-baze-bguir-proshlo-zasedanie-orgkomiteta-konkursa-nauchnykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "20.43.120.19 - - [05/Mar/2024:17:55:53 +0300] \"GET /online/galleries/profkom/den_materi2021/pages/image/imagepage7.html HTTP/2.0\" 200 1417 \"-\" \"Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116.0.1938.76 Safari/537.36\"",
+      "66.249.64.5 - - [05/Mar/2024:17:55:53 +0300] \"GET /m/12_100229_1_97207.jpg HTTP/1.1\" 403 118 \"-\" \"Googlebot-Image/1.0\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:17:55:53 +0300] \"GET /impuls/ HTTP/1.0\" 200 54038"
+    ]
+  },
+  "05.03.2024-15.16.43": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T15:16:43.210778Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 8.576540  Lock_time: 0.000071 Rows_sent: 0  Rows_examined: 424",
+      "SET timestamp\u003d1709651803;",
+      "insert into s_subquery_tmp select 1802969, t442588.id_obj from s_str_val t442588 where (t442588.id_property\u003d14352 and (t442588.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "66.249.64.5 - - [05/Mar/2024:15:16:43 +0300] \"GET /m/12_100229_1_168181.pdf HTTP/1.1\" 403 180 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:43 +0300] \"GET /ru/fre/my-pamyatuem-pra-podzvig-nashykh-dzyadou HTTP/2.0\" 200 17607 \"https://www.bsuir.by/ru/fre/novosti-fakulteta\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "66.249.64.5 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/galleries/2019/15.09.2019minski_paumarafon/slides/IMG_8437-16.jpg HTTP/1.1\" 403 118 \"-\" \"Googlebot-Image/1.0\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:43 +0300] \"GET /m/12_100229_1_141193.jpg HTTP/2.0\" 200 98770 \"https://www.bsuir.by/ru/fre/my-pamyatuem-pra-podzvig-nashykh-dzyadou\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:43 +0300] \"GET /m/12_100229_1_141188.jpg HTTP/2.0\" 200 152439 \"https://www.bsuir.by/ru/fre/my-pamyatuem-pra-podzvig-nashykh-dzyadou\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:43 +0300] \"GET /m/12_100229_1_141184.jpg HTTP/2.0\" 200 134300 \"https://www.bsuir.by/ru/fre/my-pamyatuem-pra-podzvig-nashykh-dzyadou\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/css/default.css HTTP/2.0\" 200 14805 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/fonts/romul.woff2 HTTP/2.0\" 200 22172 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 200 30087 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 200 4066 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/css/jssos-slider.css HTTP/2.0\" 200 2029 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-7.css HTTP/2.0\" 200 2392 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-7-min.js HTTP/2.0\" 200 4404 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-1.css HTTP/2.0\" 200 1608 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-1.js HTTP/2.0\" 200 3818 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 200 970 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /cms/js/jquery-1.9.1.min.js HTTP/2.0\" 200 111607 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/jssor.slider.mini.js HTTP/2.0\" 200 84120 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 200 29882 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/fonts/HelveticaItalic.woff2 HTTP/2.0\" 200 32071 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:43 +0300] \"GET /online/layouts/499/js/carouselengine/amazingcarousel-min.js HTTP/2.0\" 200 218450 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:43 +0300] \"GET /m/12_100229_1_141186.jpg HTTP/2.0\" 200 151736 \"https://www.bsuir.by/ru/fre/my-pamyatuem-pra-podzvig-nashykh-dzyadou\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:15:16:43 +0300] \"GET /ru/fre/my-pamyatuem-pra-podzvig-nashykh-dzyadou HTTP/1.0\" 200 68431"
+    ]
+  },
+  "05.03.2024-10.27.16": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T10:27:16.520200Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.054418  Lock_time: 0.000075 Rows_sent: 0  Rows_examined: 20",
+      "SET timestamp\u003d1709634436;",
+      "insert into s_subquery_tmp3 select 1770426, t398449.id_obj from s_str_val t398449 where (t398449.id_property\u003d22009 and (t398449.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/amazingcarousel-min.js HTTP/2.0\" 200 218450 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-7.css HTTP/2.0\" 200 2392 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-7-min.js HTTP/2.0\" 200 4404 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-1.css HTTP/2.0\" 200 1608 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-1.js HTTP/2.0\" 200 3818 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 200 970 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_100229_1_181896.webp HTTP/2.0\" 200 56780 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/499/js/carouselengine/amazingcarousel-min.js HTTP/2.0\" 200 218450 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET / HTTP/2.0\" 200 7264 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/bootstrap/css/font-awesome.min.css HTTP/2.0\" 200 31000 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/style/fonts/stylesheet.css HTTP/2.0\" 200 2589 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/style/main.css HTTP/2.0\" 200 6094 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "66.249.66.164 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_100229_1_62055.jpg HTTP/1.1\" 200 21625 \"-\" \"Googlebot-Image/1.0\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/493/js/jssor.slider.mini.js HTTP/2.0\" 200 41675 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /cms/js/common_window.js HTTP/2.0\" 200 1904 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/js/jquery-1.9.1.min.js HTTP/2.0\" 200 111607 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148870.svg HTTP/2.0\" 200 7772 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133175.jpg HTTP/2.0\" 200 155344 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "95.47.60.104 - - [05/Mar/2024:10:27:16 +0300] \"GET /ru/crdo HTTP/2.0\" 200 17680 \"https://www.bsuir.by/ru/crdo\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_136583.JPG HTTP/2.0\" 200 63525 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148689.jpg HTTP/2.0\" 200 59081 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/style/fonts/PTS55F_W.woff HTTP/2.0\" 200 154040 \"https://science.bsuir.by/online/layouts/77/style/fonts/stylesheet.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/layouts/77/style/fonts/PTS75F_W.woff HTTP/2.0\" 200 160436 \"https://science.bsuir.by/online/layouts/77/style/fonts/stylesheet.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /online/bootstrap/fonts/fontawesome-webfont.woff2?v\u003d4.7.0 HTTP/2.0\" 200 77160 \"https://science.bsuir.by/online/bootstrap/css/font-awesome.min.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_136582.jpg HTTP/2.0\" 200 174112 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148692.jpg HTTP/2.0\" 200 110176 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133170.jpg HTTP/2.0\" 200 101740 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133171.jpg HTTP/2.0\" 200 44704 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148688.jpg HTTP/2.0\" 200 54206 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_148782.jpg HTTP/2.0\" 200 80824 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133174.jpg HTTP/2.0\" 200 58727 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133177.jpg HTTP/2.0\" 200 66831 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /m/12_124001_1_133172.jpg HTTP/2.0\" 200 82494 \"https://science.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:10:27:16 +0300] \"GET / HTTP/1.0\" 200 22821",
+      "127.0.0.1 - - [05/Mar/2024:10:27:16 +0300] \"GET /ru/crdo HTTP/1.0\" 200 67896"
+    ]
+  },
+  "05.03.2024-10.43.59": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T10:43:59.278013Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1956",
+      "# Query_time: 3.264475  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709635439;",
+      "commit;"
+    ],
+    "nginx": [
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /ru/kaf-ikt HTTP/2.0\" 200 18675 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/css/default.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_178528.css HTTP/2.0\" 200 2542 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/fonts/romul.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/css/styles-for-info-pages.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/fonts/HelveticaItalic.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_182474.jpg HTTP/2.0\" 200 66104 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_165673.png HTTP/2.0\" 200 13591 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_165674.png HTTP/2.0\" 200 12459 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_165676.png HTTP/2.0\" 200 11143 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_165678.png HTTP/2.0\" 200 12295 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_165675.png HTTP/2.0\" 200 17898 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_165677.png HTTP/2.0\" 200 11112 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /cms/js/jquery-1.9.1.min.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_148664.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/css/jssos-slider.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/js/jssor.slider.mini.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_161182.png HTTP/2.0\" 200 378739 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/img/icons.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499//img/icons.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff HTTP/2.0\" 304 0 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff HTTP/2.0\" 304 0 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_84949.png HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_161572.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_181191.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159812.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_164529.jpg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159855.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159852.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159856.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159842.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "80.249.81.40 - - [05/Mar/2024:10:43:59 +0300] \"GET /m/12_100229_1_159851.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/kaf-ikt\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "37.214.27.10 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID\u003dresources\u0026itemID\u003d1_\u0026cm\u003d2 HTTP/2.0\" 200 2169 \"https://www.bsuir.by/cms/index.jsp\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "20.26.44.162 - - [05/Mar/2024:10:43:58 +0300] \"GET /informatika/web-json HTTP/1.1\" 404 144771 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:10:43:59 +0300] \"GET /ru/kaf-ikt HTTP/1.0\" 200 72119",
+      "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /cms/data_resource.jsp?treeID\u003dresources\u0026itemID\u003d1_\u0026cm\u003d2 HTTP/1.0\" 200 12605",
+      "127.0.0.1 - - [05/Mar/2024:10:43:58 +0300] \"GET /informatika/web-json HTTP/1.0\" 404 144615"
+    ]
+  },
+  "05.03.2024-17.17.42": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T17:17:42.032859Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1983",
+      "# Query_time: 3.094125  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709659062;",
+      "commit;"
+    ],
+    "nginx": [
+      "157.55.39.8 - - [05/Mar/2024:17:17:42 +0300] \"GET /m/12_101945_1_94993.pdf HTTP/2.0\" 200 257536 \"-\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)\"",
+      "88.99.251.222 - - [05/Mar/2024:17:17:42 +0300] \"GET /ru/news/109290-abiturienty-zhdyom-vas-v-bguir-proydyot-den-otkrytykh-dverey HTTP/1.1\" 200 18202 \"-\" \"Mozilla/5.0 (compatible; AwarioBot/1.0; +https://awario.com/bots.html)\"",
+      "5.255.231.149 - - [05/Mar/2024:17:17:42 +0300] \"GET /m/12_100229_1_85466.pdf HTTP/1.1\" 200 2760228 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\"",
+      "66.249.70.161 - - [05/Mar/2024:17:17:41 +0300] \"GET /ru/kaf-piks/stankevich-a-d HTTP/1.1\" 200 17494 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:17:17:42 +0300] \"GET /ru/news/109290-abiturienty-zhdyom-vas-v-bguir-proydyot-den-otkrytykh-dverey HTTP/1.0\" 200 66191",
+      "127.0.0.1 - - [05/Mar/2024:17:17:41 +0300] \"GET /ru/kaf-piks/stankevich-a-d HTTP/1.0\" 200 66644"
+    ]
+  },
+  "05.03.2024-20.07.47": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T20:07:47.661946Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.701691  Lock_time: 0.000106 Rows_sent: 0  Rows_examined: 20",
+      "SET timestamp\u003d1709669267;",
+      "insert into s_subquery_tmp3 select 1820003, t465566.id_obj from s_str_val t465566 where (t465566.id_property\u003d22009 and (t465566.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "37.214.45.177 - - [05/Mar/2024:20:07:47 +0300] \"GET /ru/kaf-piks/state-exam HTTP/2.0\" 200 16921 \"https://www.bsuir.by/ru/kaf-piks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "37.214.45.177 - - [05/Mar/2024:20:07:47 +0300] \"GET /m/12_100229_1_177211.jpg HTTP/2.0\" 200 57473 \"https://www.bsuir.by/ru/kaf-piks/state-exam\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "37.214.45.177 - - [05/Mar/2024:20:07:47 +0300] \"GET /m/12_100229_1_180967.jpg HTTP/2.0\" 200 140947 \"https://www.bsuir.by/ru/kaf-piks/state-exam\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:20:07:47 +0300] \"GET /ru/kaf-piks/state-exam HTTP/1.0\" 200 65265"
+    ]
+  },
+  "05.03.2024-07.39.48": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T07:39:49.361089Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.111475  Lock_time: 0.000025 Rows_sent: 0  Rows_examined: 30",
+      "SET timestamp\u003d1709624389;",
+      "delete from s_subquery_tmp3 where tmp3__n__\u003d1753066;"
+    ],
+    "nginx": [
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET / HTTP/2.0\" 200 28144 \"https://yandex.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/css/default.css HTTP/2.0\" 200 14805 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/fonts/romul.woff2 HTTP/2.0\" 200 22172 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 200 30087 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 200 32478 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 200 4066 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 200 29882 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/fonts/HelveticaItalic.woff2 HTTP/2.0\" 200 32071 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /m/12_100229_1_148664.svg HTTP/2.0\" 200 4535 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/css/jssos-slider.css HTTP/2.0\" 200 2029 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /m/12_100229_1_181896.webp HTTP/2.0\" 200 56780 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /cms/js/jquery-1.9.1.min.js HTTP/2.0\" 200 111607 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/js/jssor.slider.mini.js HTTP/2.0\" 200 84120 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-7.css HTTP/2.0\" 200 2392 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-7-min.js HTTP/2.0\" 200 4404 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-1.css HTTP/2.0\" 200 1608 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/js/carouselengine/initcarousel-1.js HTTP/2.0\" 200 3818 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 200 970 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\"",
+      "87.252.229.59 - - [05/Mar/2024:07:39:48 +0300] \"GET /online/layouts/499/img/feed-icon-14x14.png HTTP/2.0\" 200 614 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; arm_64; Android 13; 23030RAC7Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.88 YaBrowser/24.1.5.88.00 SA/3 Mobile Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:07:39:48 +0300] \"GET / HTTP/1.0\" 200 114324"
+    ]
+  },
+  "05.03.2024-14.38.16": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T14:38:16.371327Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.050025  Lock_time: 0.000103 Rows_sent: 0  Rows_examined: 40",
+      "SET timestamp\u003d1709649496;",
+      "insert into s_subquery_tmp select 1799466, t437893.id_obj from s_subquery_tmp3 s_subquery_tmp3___1799465, s_num_val t437893 where s_subquery_tmp3___1799465.tmp3__n__\u003d1799465 and s_subquery_tmp3___1799465.tmp3__id__\u003dt437893.id_obj and (t437893.id_property\u003d22007 and (t437893.val\u003d0));"
+    ],
+    "nginx": [
+      "87.250.224.82 - - [05/Mar/2024:14:38:16 +0300] \"GET /robots.txt HTTP/1.1\" 200 801 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\"",
+      "5.255.231.38 - - [05/Mar/2024:14:38:16 +0300] \"GET /m/12_100229_1_90151.pdf HTTP/1.1\" 200 4055710 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\"",
+      "46.216.118.131 - - [05/Mar/2024:14:38:15 +0300] \"GET /m/12_100229_1_175139.pdf HTTP/2.0\" 206 1 \"https://www.bsuir.by/ru/kaf-etit/diplomnoe-proektirovanie\" \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36\"",
+      "46.216.118.131 - - [05/Mar/2024:14:38:15 +0300] \"GET /m/12_100229_1_175139.pdf HTTP/2.0\" 206 166665 \"https://www.bsuir.by/ru/kaf-etit/diplomnoe-proektirovanie\" \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36\"",
+      "66.249.66.165 - - [05/Mar/2024:14:38:15 +0300] \"GET /m/12_100229_1_139946.docx HTTP/1.1\" 200 165354 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "95.47.60.104 - - [05/Mar/2024:14:38:15 +0300] \"GET /favicon.ico HTTP/2.0\" 200 1150 \"https://library.bsuir.by/ru/webometrics-2023\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\"",
+      "195.154.79.109 - - [05/Mar/2024:14:38:15 +0300] \"GET /m/12_100229_1_72555.pdf HTTP/2.0\" 200 2574340 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:14:38:16 +0300] \"GET /robots.txt HTTP/1.0\" 200 801",
+      "127.0.0.1 - - [05/Mar/2024:14:38:15 +0300] \"GET /favicon.ico HTTP/1.0\" 200 1150"
+    ]
+  },
+  "05.03.2024-12.57.42": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:57:42.696540Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1966",
+      "# Query_time: 3.030466  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709643462;",
+      "commit;"
+    ],
+    "nginx": [
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/vf/komandovanie-batalona-kursantov HTTP/2.0\" 200 17157 \"https://www.bsuir.by/ru/vf/batalon-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\"",
+      "192.168.251.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/spetsialnosti-bguir HTTP/2.0\" 200 21980 \"https://www.bsuir.by/ru/fakultety\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "66.249.66.13 - - [05/Mar/2024:12:57:42 +0300] \"GET /en/academic-department-of-humanities/yury-yankouski HTTP/1.1\" 200 10341 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_148823.png HTTP/2.0\" 200 266226 \"https://www.bsuir.by/ru/vf/komandovanie-batalona-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\"",
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_172546.jpg HTTP/2.0\" 200 16460 \"https://www.bsuir.by/ru/vf/komandovanie-batalona-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\"",
+      "66.249.66.168 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_90870.doc HTTP/1.1\" 200 149504 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "46.216.179.189 - - [05/Mar/2024:12:57:42 +0300] \"GET /m/12_100229_1_168248.jpg HTTP/2.0\" 200 31115 \"https://www.bsuir.by/ru/vf/komandovanie-batalona-kursantov\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0.1 Mobile/15E148 Safari/604.1\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/vf/komandovanie-batalona-kursantov HTTP/1.0\" 200 66992",
+      "127.0.0.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /ru/spetsialnosti-bguir HTTP/1.0\" 200 116731",
+      "127.0.0.1 - - [05/Mar/2024:12:57:42 +0300] \"GET /en/academic-department-of-humanities/yury-yankouski HTTP/1.0\" 200 35209"
+    ]
+  },
+  "05.03.2024-12.08.01": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:08:01.976493Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1964",
+      "# Query_time: 3.025736  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709640481;",
+      "commit;"
+    ],
+    "nginx": [
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 200 32478 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 200 4066 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
+      "213.180.203.207 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.1\" 200 28177 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0\"",
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 200 30087 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\"",
+      "37.215.8.180 - - [05/Mar/2024:12:08:01 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 200 29882 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:08:01 +0300] \"GET / HTTP/1.0\" 200 114334"
+    ]
+  },
+  "05.03.2024-11.45.49": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T11:45:50.219104Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1961",
+      "# Query_time: 3.659121  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709639150;",
+      "commit;"
+    ],
+    "nginx": [
+      "92.255.236.136 - - [05/Mar/2024:11:45:49 +0300] \"GET /favicon.ico HTTP/2.0\" 200 1150 \"https://www.bsuir.by/m/12_100229_1_89662.pdf\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "92.255.236.136 - - [05/Mar/2024:11:45:49 +0300] \"GET /m/12_100229_1_89662.pdf HTTP/2.0\" 200 2299325 \"https://www.google.com/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "5.255.231.51 - - [05/Mar/2024:11:45:49 +0300] \"GET / HTTP/1.1\" 301 162 \"-\" \"Mozilla/5.0 (compatible; YandexMetrika/2.0; +http://yandex.com/bots yabs01)\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:11:45:49 +0300] \"GET /favicon.ico HTTP/1.0\" 200 1150"
+    ]
+  },
+  "05.03.2024-11.56.50": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T11:56:50.837839Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1963",
+      "# Query_time: 3.036949  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709639810;",
+      "commit;"
+    ],
+    "nginx": [
+      "109.238.247.83 - - [05/Mar/2024:11:56:50 +0300] \"GET /ru/patrioticheskoe-vospitanie HTTP/1.0\" 200 66196 \"-\" \"Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0\"",
+      "167.94.162.202 - - [05/Mar/2024:11:56:50 +0300] \"GET /ru/kaf-vyssh-mat HTTP/1.1\" 200 19129 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\"",
+      "176.60.187.132 - - [05/Mar/2024:11:56:50 +0300] \"GET /m/12_0_1_71219.pdf HTTP/2.0\" 206 1 \"https://www.google.com/\" \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:11:56:50 +0300] \"GET /ru/patrioticheskoe-vospitanie HTTP/1.0\" 200 66196",
+      "127.0.0.1 - - [05/Mar/2024:11:56:50 +0300] \"GET /ru/kaf-vyssh-mat HTTP/1.0\" 200 75691"
+    ]
+  },
+  "05.03.2024-19.42.48": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T19:42:48.683237Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1993",
+      "# Query_time: 3.152747  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709667768;",
+      "commit;"
+    ],
+    "nginx": [
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /m/12_100229_1_148664.svg HTTP/2.0\" 200 4535 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /online/layouts/499/css/jssos-slider.css HTTP/2.0\" 200 2029 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "45.42.200.51 - - [05/Mar/2024:19:42:48 +0300] \"GET //.env HTTP/1.1\" 301 162 \"-\" \"Go-http-client/1.1\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /cms/js/jquery-1.9.1.min.js HTTP/2.0\" 200 111607 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 200 970 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /online/layouts/499/js/jssor.slider.mini.js HTTP/2.0\" 200 84120 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /online/layouts/499/img/icons.svg HTTP/2.0\" 200 29127 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /online/layouts/499//img/icons.svg HTTP/2.0\" 200 29127 \"https://www.bsuir.by/ru/kafedry-bguir\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "37.214.78.239 - - [05/Mar/2024:19:42:48 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff HTTP/2.0\" 200 14696 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "45.42.200.51 - - [05/Mar/2024:19:42:48 +0300] \"GET //.env HTTP/2.0\" 404 48183 \"http://sabrina.bsuir.by//.env\" \"Go-http-client/2.0\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:19:42:48 +0300] \"GET //.env HTTP/1.0\" 404 144615"
+    ]
+  },
+  "05.03.2024-15.49.37": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T15:49:37.105492Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.067569  Lock_time: 0.000077 Rows_sent: 0  Rows_examined: 836",
+      "SET timestamp\u003d1709653777;",
+      "insert into s_subquery_tmp3 select 1805499, t446004.id_obj from s_date_val t446004 where (t446004.id_property\u003d21033 and (date_format(t446004.val,\u0027-%y%m\u0027)\u003ddate_format(\u00272024.03.01 03:00\u0027,\u0027-%y%m\u0027) ));"
+    ],
+    "nginx": [
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET / HTTP/2.0\" 200 29321 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/css/default.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/layouts/499/fonts/romul.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "172.16.224.80 - - [05/Mar/2024:15:49:37 +0300] \"GET /online/layouts/499/fonts/HelveticaItalic.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:15:49:37 +0300] \"GET / HTTP/1.0\" 200 116435"
+    ]
+  },
+  "05.03.2024-12.46.40": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:46:40.597514Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1965",
+      "# Query_time: 3.018581  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709642800;",
+      "commit;"
+    ],
+    "nginx": [
+      "37.110.210.202 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/2.0\" 200 28152 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/2.0\" 200 28096 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/1.0\" 200 114343",
+      "127.0.0.1 - - [05/Mar/2024:12:46:40 +0300] \"GET / HTTP/1.0\" 200 114270"
+    ]
+  },
+  "05.03.2024-07.07.41": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T07:07:41.448156Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.408095  Lock_time: 0.000063 Rows_sent: 0  Rows_examined: 867",
+      "SET timestamp\u003d1709622461;",
+      "replace into tmp_number (seq, id, id2) select 6969292,r.id,1 from security_resties rt, security_resources r where rt.childid\u003d121327 and r.typeid\u003d-41 and r.id\u003drt.parentid;"
+    ],
+    "nginx": [
+      "216.144.248.27 - - [05/Mar/2024:07:07:41 +0300] \"GET / HTTP/1.1\" 200 28145 \"https://bsuir.by\" \"Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_2/tile_2.jpg HTTP/2.0\" 200 16533 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_3/tile_2.jpg HTTP/2.0\" 200 20339 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_4/tile_2.jpg HTTP/2.0\" 200 44344 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_5/tile_2.jpg HTTP/2.0\" 200 19445 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "66.249.66.162 - - [05/Mar/2024:07:07:41 +0300] \"GET /m/12_101945_1_86697.pdf HTTP/1.1\" 301 162 \"-\" \"Googlebot/2.1 (+http://www.google.com/bot.html)\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_2/tile_3.jpg HTTP/2.0\" 200 24290 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_3/tile_3.jpg HTTP/2.0\" 200 31814 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"",
+      "50.27.194.64 - - [05/Mar/2024:07:07:41 +0300] \"GET /online/3D/2korpus/tiles/2-HOLL1/cf_1/l_3/c_4/tile_3.jpg HTTP/2.0\" 200 21969 \"https://www.bsuir.by/ru/virtualnaya-ekskursiya-2-korpus\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:07:07:41 +0300] \"GET / HTTP/1.0\" 200 114306"
+    ]
+  },
+  "05.03.2024-06.27.36": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T06:27:36.728663Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.775335  Lock_time: 0.000000 Rows_sent: 161  Rows_examined: 2276",
+      "SET timestamp\u003d1709620056;",
+      "CALL getPages2MenuItemsTies(1,100230);"
+    ],
+    "nginx": [
+      "87.250.224.238 - - [05/Mar/2024:06:27:36 +0300] \"GET / HTTP/1.1\" 200 7277 \"-\" \"Mozilla/5.0 (compatible; YandexMetrika/2.0; +http://yandex.com/bots yabs01)\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:06:27:36 +0300] \"GET / HTTP/1.0\" 200 22821"
+    ]
+  },
+  "05.03.2024-12.07.32": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T12:07:32.101597Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.090476  Lock_time: 0.000091 Rows_sent: 0  Rows_examined: 14",
+      "SET timestamp\u003d1709640452;",
+      "insert into s_subquery_tmp select 1782194, t414491.id_obj from s_date_val t414491 where (t414491.id_property\u003d21230 and (date_format(t414491.val,\u0027-%y%m%d\u0027)\u003ddate_format(\u00272020.08.17 03:00\u0027,\u0027-%y%m%d\u0027) ));"
+    ],
+    "nginx": [
+      "146.120.15.77 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.1\" 200 75769 \"-\" \"-\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:12:07:32 +0300] \"GET /online/tnj2/one_rubric.jsp?PageID\u003d94597\u0026resID\u003d100229\u0026lang\u003dru\u0026tnj_type\u003d2\u0026start_from\u003d0\u0026ord_type\u003d-1\u0026what_find\u003d%25\u0026pid\u003d100229\u0026rid\u003d102243 HTTP/1.0\" 200 75685"
+    ]
+  },
+  "05.03.2024-16.38.58": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T16:38:58.050895Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.102607  Lock_time: 0.000072 Rows_sent: 0  Rows_examined: 20",
+      "SET timestamp\u003d1709656738;",
+      "insert into s_subquery_tmp3 select 1808464, t450017.id_obj from s_str_val t450017 where (t450017.id_property\u003d22009 and (t450017.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /ru/kaf-poit/sostav-kafedry HTTP/2.0\" 200 24695 \"https://www.bsuir.by/ru/kaf-poit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_163983.jpg HTTP/2.0\" 200 43474 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_178496.jpg HTTP/2.0\" 200 62014 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_172033.jpg HTTP/2.0\" 200 17047 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_178043.jpg HTTP/2.0\" 200 17586 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_178551.jpg HTTP/2.0\" 200 29456 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91074.jpg HTTP/2.0\" 200 69196 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_149873.jpg HTTP/2.0\" 200 36730 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91041.jpg HTTP/2.0\" 200 44573 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_178497.jpg HTTP/2.0\" 200 39887 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_150053.jpg HTTP/2.0\" 200 33805 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_149888.jpg HTTP/2.0\" 200 53699 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_158657.png HTTP/2.0\" 200 85148 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_123406.jpg HTTP/2.0\" 200 41290 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_172034.jpg HTTP/2.0\" 200 17383 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_129605.jpg HTTP/2.0\" 200 33223 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_158704.png HTTP/2.0\" 200 33071 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91073.jpg HTTP/2.0\" 200 37368 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91064.jpg HTTP/2.0\" 200 36397 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91082.jpg HTTP/2.0\" 200 66796 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_139401.jpg HTTP/2.0\" 200 105157 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_93142.jpg HTTP/2.0\" 200 42741 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91080.jpg HTTP/2.0\" 200 41249 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91076.jpg HTTP/2.0\" 200 38254 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_158644.png HTTP/2.0\" 200 47558 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_123678.jpg HTTP/2.0\" 200 45905 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91072.jpg HTTP/2.0\" 200 74520 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91068.jpg HTTP/2.0\" 200 92362 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91077.jpg HTTP/2.0\" 200 66018 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91081.jpg HTTP/2.0\" 200 48288 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91083.jpg HTTP/2.0\" 200 46945 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_91079.jpg HTTP/2.0\" 200 78709 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_102482.jpg HTTP/2.0\" 200 50571 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_133267.jpg HTTP/2.0\" 200 30611 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_134485.jpg HTTP/2.0\" 200 52035 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "172.16.238.12 - - [05/Mar/2024:16:38:58 +0300] \"GET /m/12_100229_1_155516.png HTTP/2.0\" 200 65532 \"https://www.bsuir.by/ru/kaf-poit/sostav-kafedry\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36\"",
+      "46.56.228.92 - - [05/Mar/2024:16:38:58 +0300] \"GET /online/layouts/499/img/arrow_down.svg HTTP/2.0\" 200 683 \"https://www.bsuir.by/online/layouts/499/css/timetable.css\" \"Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:16:38:58 +0300] \"GET /ru/kaf-poit/sostav-kafedry HTTP/1.0\" 200 99579"
+    ]
+  },
+  "05.03.2024-15.16.53": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T15:16:53.354271Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:  1977",
+      "# Query_time: 4.847039  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0",
+      "SET timestamp\u003d1709651813;",
+      "commit;"
+    ],
+    "nginx": [
+      "178.121.60.75 - - [05/Mar/2024:15:16:53 +0300] \"GET /online/3D/gimnaziya/ HTTP/1.1\" 200 907 \"http://gymn5.minsk.edu.by/\" \"Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko\"",
+      "66.249.64.5 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_178349.jpg HTTP/1.1\" 403 118 \"-\" \"Googlebot-Image/1.0\"",
+      "178.121.60.75 - - [05/Mar/2024:15:16:53 +0300] \"GET /online/3D/gimnaziya/pano2vr_player.js HTTP/1.1\" 304 0 \"https://www.bsuir.by/online/3D/gimnaziya/\" \"Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_84949.png HTTP/2.0\" 200 4270 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_161572.webp HTTP/2.0\" 200 2148 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_181191.webp HTTP/2.0\" 200 5676 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_159852.webp HTTP/2.0\" 200 1976 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_159812.webp HTTP/2.0\" 200 3706 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_164529.jpg HTTP/2.0\" 200 12786 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "66.249.64.5 - - [05/Mar/2024:15:16:53 +0300] \"GET /m/12_100229_1_143803.pdf HTTP/1.1\" 403 180 \"-\" \"Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"",
+      "178.121.60.75 - - [05/Mar/2024:15:16:53 +0300] \"GET /online/3D/gimnaziya/skin.js HTTP/1.1\" 304 0 \"https://www.bsuir.by/online/3D/gimnaziya/\" \"Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko\"",
+      "46.216.237.10 - - [05/Mar/2024:15:16:53 +0300] \"GET / HTTP/2.0\" 200 11457 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1\"",
+      "46.216.189.178 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/css/styles-for-info-pages.css HTTP/2.0\" 200 8659 \"https://www.bsuir.by/ru/news/rubric/education\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/prikazy HTTP/2.0\" 200 19729 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/css/default.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/fonts/romul.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/fonts/HelveticaItalic.woff2 HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/css/styles.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/css/timetable.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/css/styles-for-info-pages.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /cms/js/jquery-1.9.1.min.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_148664.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/css/jssos-slider.css HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/js/jssor.slider.mini.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/js/doubletaptogo.js HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/fonts/HelveticaRegular.woff HTTP/2.0\" 304 0 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/img/icons.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499//img/icons.svg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot HTTP/2.0\" 200 18325 \"https://www.bsuir.by/ru/fre/novosti-fakulteta\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /online/layouts/499/fonts/HelveticaBold.woff HTTP/2.0\" 304 0 \"https://www.bsuir.by/online/layouts/499/css/styles.css\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_84949.png HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_161572.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_159842.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_181191.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_159852.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_159812.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_164529.jpg HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_159855.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_159856.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "192.168.251.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_159851.webp HTTP/2.0\" 304 0 \"https://www.bsuir.by/ru/prikazy\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_141720.jpg HTTP/2.0\" 200 193833 \"https://www.bsuir.by/ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_141719.jpg HTTP/2.0\" 200 66683 \"https://www.bsuir.by/ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_141721.jpg HTTP/2.0\" 200 66982 \"https://www.bsuir.by/ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "46.216.113.227 - - [05/Mar/2024:15:16:52 +0300] \"GET / HTTP/2.0\" 200 11457 \"https://www.bsuir.by/\" \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Mobile/15E148 Safari/604.1\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_141718.jpg HTTP/2.0\" 200 137634 \"https://www.bsuir.by/ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\"",
+      "89.64.38.93 - - [05/Mar/2024:15:16:52 +0300] \"GET /m/12_100229_1_141722.jpg HTTP/2.0\" 200 142618 \"https://www.bsuir.by/ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:15:16:53 +0300] \"GET / HTTP/1.0\" 200 46058",
+      "127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/prikazy HTTP/1.0\" 200 78601",
+      "127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET /ru/fre/studenty-fre-uchastvovali-v-v-vserossiyskom-smotre-konkurse-kursovykh-rabot HTTP/1.0\" 200 68676",
+      "127.0.0.1 - - [05/Mar/2024:15:16:52 +0300] \"GET / HTTP/1.0\" 200 46058"
+    ]
+  },
+  "05.03.2024-06.07.27": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T06:07:27.313368Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 4.963989  Lock_time: 0.000070 Rows_sent: 0  Rows_examined: 20",
+      "SET timestamp\u003d1709618847;",
+      "insert into s_subquery_tmp3 select 1743571, t362421.id_obj from s_str_val t362421 where (t362421.id_property\u003d22009 and (t362421.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "213.180.203.222 - - [05/Mar/2024:06:07:27 +0300] \"GET /ru/kaf-poit/brantsevich-p-yu HTTP/1.1\" 200 21645 \"-\" \"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:06:07:27 +0300] \"GET /ru/kaf-poit/brantsevich-p-yu HTTP/1.0\" 200 77423"
+    ]
+  },
+  "05.03.2024-15.07.28": {
+    "mysql-low.log": [
+      "# Time: 2024-03-05T15:07:29.091528Z",
+      "# User@Host: webman2[webman2] @ localhost [127.0.0.1]  Id:     4",
+      "# Query_time: 3.371278  Lock_time: 0.000074 Rows_sent: 0  Rows_examined: 20",
+      "SET timestamp\u003d1709651249;",
+      "insert into s_subquery_tmp3 select 1802322, t441727.id_obj from s_str_val t441727 where (t441727.id_property\u003d22009 and (t441727.val like \u0027%\u0027));"
+    ],
+    "nginx": [
+      "46.216.112.209 - - [05/Mar/2024:15:07:28 +0300] \"GET /m/12_100229_1_182300.webp HTTP/2.0\" 200 218412 \"https://www.bsuir.by/\" \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36\"",
+      "192.168.251.1 - - [05/Mar/2024:15:07:28 +0300] \"POST /cms/service/editor/wysiwyg.jsp HTTP/2.0\" 200 19574 \"https://www.bsuir.by/cms/service/editor/wysiwyg.jsp?PageID\u003d104169\u0026LangID\u003d1\" \"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""
+    ],
+    "tomcat": [
+      "127.0.0.1 - - [05/Mar/2024:15:07:28 +0300] \"POST /cms/service/editor/wysiwyg.jsp HTTP/1.0\" 200 277913"
+    ]
+  }
+}
